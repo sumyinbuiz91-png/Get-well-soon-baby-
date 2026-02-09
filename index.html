@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Get Well Soon ❤️</title>
+  <style>
+    body {
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      background-color: #a8d0e6; /* soft blue */
+      color: #333;
+      text-align: center;
+      margin: 0;
+      padding: 0;
+    }
+
+    .page {
+      display: none;
+      padding: 50px 20px;
+    }
+
+    .active {
+      display: block;
+    }
+
+    h1, h2 {
+      color: #1a374d; /* navy-ish soft */
+    }
+
+    p {
+      font-size: 18px;
+      line-height: 1.5;
+      margin: 15px 0;
+    }
+
+    img {
+      display: block;
+      margin: 20px auto;
+      max-width: 200px;
+      border-radius: 15px;
+    }
+
+    button {
+      background-color: #1a374d;
+      color: white;
+      border: none;
+      padding: 10px 20px;
+      margin-top: 20px;
+      font-size: 16px;
+      border-radius: 10px;
+      cursor: pointer;
+    }
+
+    button:hover {
+      background-color: #27496d;
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Page 1: Your original good morning message -->
+  <div class="page active" id="page1">
+    <h1>Good morning handsome 💙</h1>
+    <p>I hope you had a good sleep and woke up feeling a bit better today. Please rest, hydrate, be kind and take care of yourself, before i take over one day hm? I really appreciate you, your effort, your care, your presence and time. 
+      You mean a lot to me darling and I love you so much beyond words could express ❤️</p>
+    <p>May Allah bless you with shifa and strong health always.</p>
+    <button onclick="nextPage()">Next</button>
+  </div>
+<!-- Page 2: Babies' wishes, Arabic dua, We love you, sparkles -->
+<div class="page" id="page2">
+  <h2>Special messages from Tux & Pebble!</h2>
+
+  <div style="position: relative; display: inline-block;">
+    <img src="https://i.postimg.cc/Y219GLvJ/tux-baby-b.jpg" alt="Tux">
+    <!-- Sparkles -->
+    <div class="sparkle" style="top:10px; left:10px;"></div>
+    <div class="sparkle" style="top:50px; left:120px;"></div>
+    <div class="sparkle" style="top:30px; left:70px;"></div>
+  </div>
+  <p>Tux says: Get well soon Daddy!</p>
+
+  <div style="position: relative; display: inline-block;">
+    <img src="https://i.postimg.cc/MGTM16CQ/Pebble-baby-g.jpg" alt="Pebble">
+    <!-- Sparkles -->
+    <div class="sparkle" style="top:5px; left:15px;"></div>
+    <div class="sparkle" style="top:60px; left:140px;"></div>
+    <div class="sparkle" style="top:20px; left:90px;"></div>
+  </div>
+  <p>Pebble says: Feel better soon Daddy!</p>
+
+  <p style="font-size: 22px; margin-top: 30px;">اللَّهُمَّ اشْفِهِ شِفَاءً لا يُغَادِرُ سَقَمًا</p>
+  <h2>We love you ❤️</h2>
+
+  <button onclick="prevPage()">Back</button>
+</div>
+  
+
+  <script>
+    function nextPage() {
+      document.getElementById('page1').classList.remove('active');
+      document.getElementById('page2').classList.add('active');
+    }
+
+    function prevPage() {
+      document.getElementById('page2').classList.remove('active');
+      document.getElementById('page1').classList.add('active');
+    }
+  </script>
+
+</body>
+</html>
+
+body {
+  font-family: system-ui;
+  background: #f06d06;
+  color: white;
+  text-align: center;
+}
+
+document.getElementsByTagName("h1")[0].style.fontSize = "6vw";
